@@ -10,12 +10,33 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* SCROOLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--white); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--orange); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange); 
 }
 
 body {
     font-family: 'Pangolin', cursive;
     background: var(--orange);
-
 }
 
 ul {
