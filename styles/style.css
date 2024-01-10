@@ -71,6 +71,11 @@ ul {
     width: 80%;
 }
 
+section {
+    text-align: center;
+    min-height: 70dvh;
+}
+
 @media only screen and (max-width: 600px) {
     .nav ul {
         margin-top: -7.5vw;
