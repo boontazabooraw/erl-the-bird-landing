@@ -12,7 +12,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    /* border: 2px solid red; */
+    
 }
 
 /* SCROOLBAR */
@@ -62,14 +62,18 @@ ul {
 
 .nav ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: nowrap;
     align-items: center;
     text-align: center;
     margin-top: -4dvw;
+
 }
 
 .nav ul li {
-    width: 500px;
+    padding: 0;
+    margin: 0;
+    width: 200px;
 }
 
 .nav ul li a {
@@ -124,7 +128,8 @@ section .erl-message {
 
 .iframe-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
+    /* 16:9 */
     padding-top: 25px;
     height: 0;
 
@@ -136,6 +141,19 @@ iframe {
     width: 60%;
     height: 60%;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+footer .socials a {
+    text-decoration: none;
+}
+
 
 @media only screen and (max-width: 768px) {
     .nav ul {
@@ -152,9 +170,7 @@ iframe {
         border: 6px solid var(--orange);
     }
 
-    .iframe-wrapper iframe {
-
-    }
+    .iframe-wrapper iframe {}
 }
 
 @media only screen and (max-width: 668px) {
@@ -192,19 +208,13 @@ iframe {
         border: 5px solid var(--orange);
     }
 
-    .iframe-wrapper iframe {
-
-    }
+    .iframe-wrapper iframe {}
 }
 
 @media only screen and (max-width: 570px) {
-    section .iframe-wrapper {
+    section .iframe-wrapper {}
 
-    }
-
-    .iframe-wrapper iframe {
-
-    }
+    .iframe-wrapper iframe {}
 }
 
 @media only screen and (max-width: 425px) {
@@ -224,9 +234,7 @@ iframe {
         border: 5px solid var(--orange);
     }
 
-    .section {
-        
-    }
+    .section {}
 
     iframe {
         position: absolute;
