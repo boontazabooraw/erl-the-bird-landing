@@ -12,6 +12,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    /* border: 2px solid red; */
 }
 
 /* SCROOLBAR */
@@ -38,6 +39,7 @@
 body {
     font-family: 'Pangolin', cursive;
     background: var(--orange);
+    width: 100%;
 }
 
 ul {
@@ -45,30 +47,28 @@ ul {
 }
 
 .wrapper {
-    max-width: 100%;
+    width: 100%;
 }
 
 .nav {
     background: transparent;
-
 }
 
 .nav .img-members {
     position: relative;
-    width: 100%;
+    max-width: 100%;
     z-index: -1;
 }
 
 .nav ul {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    flex-direction: row;
+    text-align: center;
     margin-top: -4dvw;
-    margin-left: 15dvw;
-    margin-right: 15dvw;
 }
+
+.nav ul li {}
 
 .nav ul li a {
     font-size: 2rem;
@@ -89,7 +89,9 @@ ul {
 
 .content-wrapper {
     padding-top: 30dvh;
-    min-width: 80%;
+    margin: auto;
+    max-width: 80%;
+
 }
 
 section {
@@ -129,20 +131,19 @@ section .iframe-wrapper {
     min-height: 60%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .nav ul {
-        margin-top: -7.5dvw;
+        margin-top: -5dvw;
 
     }
 
     .nav ul li a {
-        font-size: 1.2rem;
+        font-size: 1.75rem;
     }
 
     .etb-logo {
-        max-height: 15dvh;
-        border-radius: 50%;
-        border: 5px solid var(--orange);
+        max-height: 12dvh;
+        border: 6px solid var(--orange);
     }
 
     .iframe-wrapper iframe {
@@ -172,6 +173,28 @@ section .iframe-wrapper {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .nav ul {
+        margin-top: -7.5dvw;
+
+    }
+
+    .nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .etb-logo {
+        max-height: 15dvh;
+        border-radius: 50%;
+        border: 5px solid var(--orange);
+    }
+
+    .iframe-wrapper iframe {
+        min-width: 60%;
+        min-height: 60%;
+    }
+}
+
 @media only screen and (max-width: 570px) {
     section .iframe-wrapper {
         position: relative;
@@ -191,21 +214,18 @@ section .iframe-wrapper {
 
 @media only screen and (max-width: 450px) {
     .nav ul {
-        margin-top: -7dvw;
-
+        margin-top: -6dvw;
         margin-left: 5dvw;
         margin-right: 5dvw;
     }
 
     .nav ul li a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
 
-
     .etb-logo {
-        max-height: 12dvh;
-        border-radius: 50%;
+        max-height: 15dvw;
         border: 5px solid var(--orange);
     }
 
