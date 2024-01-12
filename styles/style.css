@@ -14,7 +14,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* SCROOLBAR */
@@ -155,63 +155,84 @@ footer .socials a {
     text-decoration: none;
 }
 
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 1.5dvw;
+    }
 
     .nav ul {
-        margin-top: -5dvw;
+        margin-top: -4dvw;
+    }
+    .nav ul li a {
+        font-size: 1.3rem;
+    }
+
+    .etb-logo {
+        max-height: 13dvw;
+        border: 15px solid var(--white);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 1.5dvw;
+    }
+
+    .nav ul {
+        margin-top: -3dvw;
 
     }
 
     .nav ul li a {
-        font-size: 1.75rem;
+        font-size: 1rem;
     }
 
     .etb-logo {
-        max-height: 12dvh;
-        border: 6px solid var(--orange);
+        max-height: 15dvh;
+        border: 6px solid var(--white);
     }
 
     .iframe-wrapper iframe {}
 }
 
 @media only screen and (max-width: 668px) {
+    body {
+        font-size: 2dvw;
+    }
+    
     .nav ul {
-        margin-top: -7.5dvw;
-
-        margin-left: 5dvw;
-        margin-right: 5dvw;
+        margin-top: -6dvw;
     }
 
     .nav ul li a {
-        font-size: 1.5rem;
+        font-size: 3dvw;
     }
 
     .etb-logo {
-        max-height: 15dvh;
+        max-height: 15dvw;
         border-radius: 50%;
-        border: 5px solid var(--orange);
+        border: 5px solid var(--white);
     }
 }
 
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 3dvw;
+        font-size: 2.3dvw;
     }
 
     .nav ul {
-        margin-top: -7.5dvw;
+        margin-top: -6dvw;
 
     }
 
     .nav ul li a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .etb-logo {
-        max-height: 15dvh;
+        max-height: 15dvw;
         border-radius: 50%;
-        border: 5px solid var(--orange);
+        border: 5px solid var(--white);
     }
 
     .iframe-wrapper iframe {}
@@ -229,9 +250,7 @@ footer .socials a {
     }
 
     .nav ul {
-        margin-top: -6dvw;
-        margin-left: 5dvw;
-        margin-right: 5dvw;
+        margin-top: -5dvw;
     }
 
     .nav ul li a {
@@ -241,7 +260,7 @@ footer .socials a {
 
     .etb-logo {
         max-height: 15dvw;
-        border: 5px solid var(--orange);
+        border: 5px solid var(--white);
     }
 
     .section {}
