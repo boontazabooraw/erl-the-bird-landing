@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /* COLOURZ */
 :root {
     --orange: rgb(235, 116, 32);
-    --white: rgb(224, 219, 216);
-    --black: rgb(56, 56, 56);
+    --white: rgb(226, 226, 226);
+    --black: #383838;
+    --brown: rgb(64, 46, 50);
 }
 
 * {
@@ -12,7 +14,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    
+    border: 1px solid red;
 }
 
 /* SCROOLBAR */
@@ -37,9 +39,10 @@
 }
 
 body {
-    font-family: 'Pangolin', cursive;
-    background: var(--orange);
+    font-family: 'Montserrat', sans-serif;
+    background: var(--white);
     width: 100%;
+    font-size: 2dvw;
 }
 
 ul {
@@ -73,25 +76,25 @@ ul {
 .nav ul li {
     padding: 0;
     margin: 0;
-    width: 200px;
+    width: 250px;
 }
 
 .nav ul li a {
     font-size: 2rem;
     text-decoration: none;
-    color: var(--black);
+    color: var(--orange);
     font-weight: bold;
 
 }
 
 .nav ul li a:hover {
-    color: rgb(224, 219, 216);
+    color: var(--black);
 }
 
 .etb-logo {
     max-height: 25dvh;
     border-radius: 50%;
-    border: 15px solid var(--orange);
+    border: 15px solid var(--white);
 }
 
 
@@ -122,9 +125,7 @@ section:nth-child(3) {
     text-align: center;
 }
 
-section .erl-message {
-    font-size: 1.5rem;
-}
+section .erl-message {}
 
 .iframe-wrapper {
     position: relative;
@@ -156,6 +157,7 @@ footer .socials a {
 
 
 @media only screen and (max-width: 768px) {
+
     .nav ul {
         margin-top: -5dvw;
 
@@ -193,6 +195,10 @@ footer .socials a {
 }
 
 @media only screen and (max-width: 600px) {
+    body {
+        font-size: 3dvw;
+    }
+
     .nav ul {
         margin-top: -7.5dvw;
 
@@ -218,6 +224,10 @@ footer .socials a {
 }
 
 @media only screen and (max-width: 425px) {
+    body {
+        font-size: 3dvw;
+    }
+
     .nav ul {
         margin-top: -6dvw;
         margin-left: 5dvw;
@@ -225,7 +235,7 @@ footer .socials a {
     }
 
     .nav ul li a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
 
