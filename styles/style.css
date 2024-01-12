@@ -77,26 +77,31 @@ ul {
     padding: 0;
     margin: 0;
     width: 250px;
+
 }
 
 .nav ul li a {
     font-size: 2rem;
     text-decoration: none;
-    color: var(--orange);
+    color: var(--white);
     font-weight: bold;
+    color: var(--orange);
+    transition-duration: 0.2s;
+
 
 }
 
 .nav ul li a:hover {
-    color: var(--black);
+    color: var(--white);
+    text-shadow: -3px -2px 0px var(--orange), 3px 2px 0px var(--black);
 }
 
 .etb-logo {
     max-height: 25dvh;
     border-radius: 50%;
-    border: 15px solid var(--white);
+    border: 15px solid var(--orange);
+    box-shadow: 5px 5px 0px 0px var(--black), 0px 0px 0px 12px var(--white);
 }
-
 
 
 section {
@@ -163,13 +168,14 @@ footer .socials a {
     .nav ul {
         margin-top: -4dvw;
     }
+
     .nav ul li a {
         font-size: 1.3rem;
     }
 
     .etb-logo {
         max-height: 13dvw;
-        border: 15px solid var(--white);
+        border: 15px solid var(--orange);
     }
 }
 
@@ -189,7 +195,7 @@ footer .socials a {
 
     .etb-logo {
         max-height: 15dvh;
-        border: 6px solid var(--white);
+        border: 6px solid var(--orange);
     }
 
     .iframe-wrapper iframe {}
@@ -199,7 +205,7 @@ footer .socials a {
     body {
         font-size: 2dvw;
     }
-    
+
     .nav ul {
         margin-top: -6dvw;
     }
@@ -211,7 +217,7 @@ footer .socials a {
     .etb-logo {
         max-height: 15dvw;
         border-radius: 50%;
-        border: 5px solid var(--white);
+        border: 5px solid var(--orange);
     }
 }
 
@@ -232,17 +238,11 @@ footer .socials a {
     .etb-logo {
         max-height: 15dvw;
         border-radius: 50%;
-        border: 5px solid var(--white);
+        border: 5px solid var(--orange);
     }
 
-    .iframe-wrapper iframe {}
 }
 
-@media only screen and (max-width: 570px) {
-    section .iframe-wrapper {}
-
-    .iframe-wrapper iframe {}
-}
 
 @media only screen and (max-width: 425px) {
     body {
@@ -260,7 +260,7 @@ footer .socials a {
 
     .etb-logo {
         max-height: 15dvw;
-        border: 5px solid var(--white);
+        border: 5px solid var(--orange);
     }
 
     .section {}
